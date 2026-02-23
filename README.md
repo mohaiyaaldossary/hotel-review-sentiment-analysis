@@ -5,7 +5,7 @@ This project performs sentiment analysis on hotel reviews using two different ap
 - **VADER (Lexicon-based model)**
 - **RoBERTa (Transformer-based deep learning model)**
 
-The goal is to compare traditional rule-based sentiment analysis with a modern transformer model and evaluate their performance.
+The goal of this project is to compare a traditional rule-based sentiment analysis method with a modern transformer-based model and evaluate their performance.
 
 ---
 
@@ -21,31 +21,45 @@ These labels were used as ground truth to evaluate model predictions.
 
 ---
 
+## 📂 Dataset
+
+**Datafiniti Hotel Reviews Dataset**
+
+Source: Kaggle  
+https://www.kaggle.com/datasets/datafiniti/hotel-reviews
+
+The dataset contains hotel review texts along with numerical ratings.  
+Ratings were transformed into sentiment categories (positive, neutral, negative) for evaluation purposes.
+
+Note: The dataset is not included in this repository due to size limitations. Please download it directly from Kaggle.
+
+---
+
 ## 🛠 Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- NLTK (VADER)
-- HuggingFace Transformers
-- PyTorch
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
+- NLTK (VADER)  
+- HuggingFace Transformers  
+- PyTorch  
 
 ---
 
 ## 🤖 Models Used
 
-### 1️⃣ VADER
-- Lexicon-based sentiment analysis model
-- Fast and lightweight
-- Rule-based approach
+### VADER
+- Lexicon-based sentiment analysis model  
+- Fast and lightweight  
+- Rule-based approach  
 
-### 2️⃣ RoBERTa
-- `cardiffnlp/twitter-roberta-base-sentiment`
-- Transformer-based deep learning model
-- Context-aware and more accurate
+### RoBERTa
+- `cardiffnlp/twitter-roberta-base-sentiment`  
+- Transformer-based deep learning model  
+- Context-aware and more accurate  
 
 ---
 
@@ -56,26 +70,32 @@ These labels were used as ground truth to evaluate model predictions.
 | VADER   | 72.6%    |
 | RoBERTa | 79.2%    |
 
-RoBERTa outperformed VADER across:
-- Accuracy
-- Precision
-- Recall
-- F1-score
-
-Transformer-based models showed stronger performance, especially in detecting negative and neutral sentiments.
+RoBERTa outperformed VADER across accuracy, precision, recall, and F1-score.  
+The transformer-based model showed stronger performance, especially in detecting negative and neutral sentiments.
 
 ---
 
-## 📈 Visualizations
+## 📈 Visual Analysis
 
 The project includes:
-- True sentiment distribution
-- Model prediction distributions
-- Accuracy comparison bar chart
-- Confusion matrices
 
-These visualizations help analyze model behavior and classification performance.
+- True sentiment distribution  
+- Model prediction distributions  
+- Accuracy comparison visualization  
+- Confusion matrices  
+
+These visualizations provide insights into model behavior and classification performance.
 
 ---
 
-## 📂 Project Structure
+## 📌 Conclusion
+
+This project demonstrates:
+
+- Data preprocessing and cleaning  
+- Sentiment label engineering  
+- Comparison between lexicon-based and transformer-based models  
+- Model evaluation using classification metrics  
+- Data visualization for performance analysis  
+
+The results highlight the advantage of transformer-based NLP models in understanding contextual sentiment compared to rule-based approaches.
